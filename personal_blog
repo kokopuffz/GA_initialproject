@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Mountains of Christmas' rel='stylesheet'>
+  <style>
+    header {
+      text-align: center;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/5/5c/518097-background-hd.jpg');
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    h2 {
+      color:  ;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    body {
+      background-color: rgb(201, 76, 76, );
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://cdn.discordapp.com/attachments/919468128432455700/919654466175766588/IMG_3021.JPG"width= 200px
+     height= auto>
+    <h1>Chan's Cats</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Book Reviews</a></li>
+      <li><a href="#">Korean Lessons</a></li>
+    </ul>
+  </header>
+  <article>
+    <img src="https://cdn.discordapp.com/attachments/919468128432455700/919715430573154374/IMG_20161125_160700.jpg"width= 200px
+     height= auto>
+    <h2>Arigato</h2>
+    <p>First cat.  Likes feet. Grouchy old lady.</p>   
+    <button>Like</button>
+  </article>
+  <article>
+    <img src="https://cdn.discordapp.com/attachments/919468128432455700/919654143138889778/B22B4206-33FA-428C-8DB5-8AF2B66C7B8E.jpg"width= 200px
+     height= auto>
+    <h2>Kookiemonster aka daFat</h2>
+    <p>Fluffy not fat. Big-boned.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <img src="https://cdn.discordapp.com/attachments/296063428043341834/919118232261107712/image0.jpg"width= 200px
+     height= auto>
+    <h2>Hamilton aka As*hole</h2>
+    <p>ethical thundercats sustainable locavore quinoa Neutra. Aesthetic tacky sweater single-origin coffee, bicycle rights organic lo-fi street art american apparel ennui four loko ethnic Brooklyn small batch. Forage YOLO polaroid</p>
+    <button>Like</button>
+  </article>
+  <article>
+  <img src="https://cdn.discordapp.com/attachments/919468128432455700/919716752617795704/IMG_0445.JPEG"width= 200px
+     height= auto>
+    <h2>Pudgie</h2>
+    <p>Loves to eat. Most talkative.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <img src="https://cdn.discordapp.com/attachments/919468128432455700/919717181858668544/IMG_0931.JPEG"width= 200px
+     height= auto>
+    <h2>Einstein</h2>
+    <p>The smart one.</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
