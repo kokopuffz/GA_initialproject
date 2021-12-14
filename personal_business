@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Corinthia:wght@700&family=Emilys+Candy&family=Viga&display=swap" rel="stylesheet">
+<style>
+body {
+  font-family: 'Emilys Candy', cursive;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
+}
+div {
+  height: 500px;
+  background-size: cover;
+  position: relative;
+  margin: 20px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Bubblegum Sans', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: pink;
+  margin: 60px 0 10px 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: -10px 0 30px 0;
+  font-family: 'Viga', sans-serif;
+  font-size: 45px
+}
+h3 {
+  text-align: center;
+  color: pink;
+  margin: -25px 0 0;
+  font-family: 'Viga', sans-serif;
+  font-size: 20px
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+  font-size: 30px
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.Arigato{
+  background-image: url("https://cdn.discordapp.com/attachments/919468128432455700/919715430573154374/IMG_20161125_160700.jpg");
+}
+.daFat{
+  background-image: url("https://cdn.discordapp.com/attachments/919468128432455700/919807167350063124/BF0EBF97-1E2D-416E-83FD-210CDBCC5AAC.jpg");
+}
+.Hammy{
+  background-image: url("https://media.discordapp.net/attachments/919468128432455700/919468742814101535/6593CA15-B5DA-449C-B487-8759D0A0D223.jpg?width=365&height=456");
+}
+.Pudgie{
+  background-image: url("https://cdn.discordapp.com/attachments/919468128432455700/919716752617795704/IMG_0445.JPEG");
+}
+.Einstein{
+  background-image: url("https://cdn.discordapp.com/attachments/919468128432455700/919717181858668544/IMG_0931.JPEG");
+}
+.catnames {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 15px 0;
+  }
+  h3 {
+    font-size: 15px;
+    margin: 20px 0 10px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Puff's Cat Cafe</h1>
+<h2>overpriced coffee & cute cats</h2>
+<h3>click on each cat to find out if they are impish or admirable.</h3>
+<div class="Arigato">
+  <p>impish or admirable? <span class="catnames">Arigato</span><br />
+  <small>IMPISH! She has an obsession with feet and is an expert in the art of torture.  She will knead and purr at you sweetly while you slowly bleed. </small></p>
+</div>
+
+<div class="daFat">
+  <p>impish or admirable? <span class="catnames">daFat</span><br />
+  <small>IMPISH! daFat will not sleep or cuddle with you unless she is hungry.  She loves to nap and is very fluffy(not fat).</small></p>
+</div>
+  
+<div class="Hammy">
+  <p>impish or admirable? <span class="catnames">Hammy</span><br />
+  <small>IMPISH AF. Nicknamed Asshole, the Hammy-Ham is the biggest troublemaker of the bunch. He knows he is pretty so he gets away with everything. Also, he's a beggar-face.</small></p>
+</div>
+
+<div class="Pudgie">
+  <p>impish or admirable? <span class="catnames">Pudgie</span><br />
+  <small>Admirable. Sweet Pudgie will cuddle with you. She loves to talk and have deep conversations. Best hunter out of the bunch.</small></p>
+</div>
+  
+<div class="Einstein">
+  <p>impish or admirable? <span class="catnames">Einstein</span><br />
+  <small>Admirable. If cats could find the cure to cancer, Einstein would be the one to do it. First to use the litterbox, first to eat wet food, smartest kitty!</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
