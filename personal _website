@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script src="/assets/jquery.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Mountains of Christmas' rel='stylesheet'>
+  <meta charset = "utf-8" />
+    <title>The Belsnickel</title>
+    <link rel = "icon" href = 
+"https://png2.cleanpng.com/sh/5bac6d3fd337eded812dd3cfb8edbcde/L0KzQYm3VcI5N5lBgZH0aYP2gLBuTgJicZ9zRelybIPyfn7rlBlocKUyi9VxcoX3dX77iPUud5drgdVuLXrsfX7vgfxxbaN5RdZCaXfrhH68gsBkPZc1TNdrY0O3SHA9VsI6PWg3TqMAMke4Q4i7UcI6PmY8RuJ3Zx==/kisspng-rainn-wilson-dwight-schrute-the-office-jim-halpert-dwight-5b0c5f04ebc348.6629572615275374129657.png" 
+        type = "image/x-icon">
+  
+  <style>
+    body {      
+      text-align: center;
+      background: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/518097-background-hd.jpg);
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-family: helvetica;
+}
+    article {
+      background-color: white;
+      padding: 30px;
+      text-align: center;
+      color: black;
+      font-family: 'Mountains of Christmas';font-size: 35px;
+    }
+    /*p {*/
+    /*  font-size: 22px;*/
+    /*}*/
+    input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      background: red;
+      color: white;
+    }
+    
+    img {
+  width: 200px;
+  height: 300px;
+  object-fit: contain;
+    }
+  
+  </style>  
+  </head>
+
+<body>
+  <img src="https://cdn.discordapp.com/attachments/919468128432455700/919654466175766588/IMG_3021.JPG" width= 200px
+     height= auto>
+  <p>Hi! I'm Grace, a TX-based beginner coder. I love cats and The Office.  This page was in reference to The Office episode (season 9, episode 9). Enjoy!
+  </p>
+
+    <article>
+      <p>Cheer or fear, Belsnickel is here! - Dwight Shrute<p>
+      <p>Is your pet impish or admirable? Put in a URL picture of your pet and find out.
+      </p>  
+      <p>Click the button to start.</p>  
+      <button onclick="myFunction()">Try it</button>
+      <p id="yourImgElement"></p>
+      <script>
+        function myFunction() {
+        var img = new Image();
+        img.src = prompt("Url of a picture:");
+    //if url is invalid
+        img.onerror = function() { alert("Provided URL does not point to a valid picture.") };
+    
+    // Ok, we have correct picture; display it
+        img.onload = function() {
+        document.getElementById("yourImgElement").src = img.src;
+    };
+    <img id="yourImgElement">
+    }
+    </script>
+    </article>
+  
+    <footer>
+      <p>If you would like any updates, put your email here.</p>
+      <input type="email" placeholder="Your email">
+      <input type="submit">  
+    </footer>
+
+  </body>
+</html>
+
